@@ -1,0 +1,27 @@
+<div data-sly-use.weather="com.mysite.core.models.WeatherModel"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     class="cmp-weather">
+    <h1 class="header"> Famous Travel Destination ${weather.city} </h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade" data-sly-repeat="${weather.images}">
+            <div class="numbertext">${itemList.count} / ${weather.imageListSize}</div>
+            <img src="${item}" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div>
+            <p><b>${weather.city}</b></p>
+            <div>
+                <div>
+                    <div class="label">Today</div>
+                    <div id="tempratureDiv">${weather.temperature}</div>
+                    <div id="tempratureDivF" style="display: none;">${weather.temperatureF}</div>
+                    <span id="celcius" onclick="changeToCelcius()"> &deg; C</span> |
+                    <span id="fahrenheit" onclick="changeToFarenheit()"> &deg; F</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <sly data-sly-call="${template.placeholder @ isEmpty=!weather.city, classAppend='cmp-weather'}"></sly>

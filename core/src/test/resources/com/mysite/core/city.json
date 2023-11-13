@@ -1,0 +1,20 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "city": "Cologne",
+  "sling:resourceType": "mysite/components/weather",
+  "images": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "image": "/content/dam/mysite/weather/cologne/cologne1.jpg"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "image": "/content/dam/mysite/weather/cologne/cologne2.jpg"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "image": "/content/dam/mysite/weather/cologne/cologne3.jpg"
+    }
+  }
+}

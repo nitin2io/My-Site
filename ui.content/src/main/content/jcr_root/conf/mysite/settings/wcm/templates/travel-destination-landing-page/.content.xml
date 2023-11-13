@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2023-11-11T11:31:58.050+13:00"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/mysite/settings/wcm/template-types/travel-destination-page"
+        jcr:description="Travel Destination Landing Page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Travel Destination Landing Page"
+        status="enabled"/>
+</jcr:root>

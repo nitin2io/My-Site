@@ -1,0 +1,10 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/mysite",
+        "create path (nt:unstructured) /content/dam/mysite/jcr:content",
+        "set properties on /content/dam/mysite/jcr:content\n  set cq:conf{String} to /conf/mysite\n  set jcr:title{String} to \"My Site\"\nend",
+        "create path (nt:unstructured) /content/weather/jcr:content",
+        "create path (sling:Folder) /content/weather",
+        "create service user weather-service-user with path /home/users/system/weather-service-user\r\nset ACL for weather-service-user\r\n        allow jcr:read,rep:write,crx:replicate on /content/weather\r\n allow jcr:read on /content/dam/mysite/weather\n end"
+    ]
+}
